@@ -11,10 +11,6 @@ usage="usage: $script [-h|-r|-s]
     -p| --project-id    project id
     -s| --service-repo  service repo"
 
-
-#
-# For Bash parsing explanation, please see https://stackoverflow.com/a/14203146
-#
 while [[ $# -gt 0 ]]
 do
     key="$1"
@@ -36,10 +32,10 @@ do
         FROM_REPO="$2"
         shift
         ;;
-	-t|--to-repo)
-	TO_REPO="$2"
-	shift
-	;;
+        -t|--to-repo)
+        TO_REPO="$2"
+        shift
+        ;;
         *)
         # Unknown option
         ;;
